@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=BOOT0 Pin=P4-1
+Removed Pin From Net: NetName=D-GND Pin=P4-2
+Removed Pin From Net: NetName=BOOT0 Pin=R51-1
+Removed Pin From Net: NetName=C-3V3 Pin=R51-2
+Removed Pin From Net: NetName=OLED-D1 Pin=U10-38
+Removed Pin From Net: NetName=OLED-D0 Pin=U10-39
+Removed Pin From Net: NetName=UART1-RX Pin=USB1-2
+Removed Pin From Net: NetName=UART1-TX Pin=USB1-3
+Removed Pin From Net: NetName=SWCLK Pin=USB2-2
+Removed Pin From Net: NetName=SWDIO Pin=USB2-3
+Removed Member From Class: ClassName=32原理图 Member=P4
+Added Pin To Net: NetName=D-GND Pin=R51-1
+Added Pin To Net: NetName=BOOT0 Pin=R51-2
+Added Pin To Net: NetName=OLED-D0 Pin=U10-38
+Added Pin To Net: NetName=OLED-D1 Pin=U10-39
+Added Pin To Net: NetName=UART1-TX Pin=USB1-2
+Added Pin To Net: NetName=UART1-RX Pin=USB1-3
+Added Pin To Net: NetName=SWDIO Pin=USB2-2
+Added Pin To Net: NetName=SWCLK Pin=USB2-3
+Added Room: Name=32原理图

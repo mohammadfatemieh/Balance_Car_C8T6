@@ -56,7 +56,7 @@ GenerateClassCluster=0
 DocumentUniqueId=RJMWOTEI
 
 [Document2]
-DocumentPath=32PCB.PcbDoc
+DocumentPath=Ö±Á¢³µ-PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -70,7 +70,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JCUKINUX
+DocumentUniqueId=UHTVYSCG
 
 [Configuration1]
 Name=Default Configuration

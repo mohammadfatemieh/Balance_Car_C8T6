@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=AD-1 Pin=C71-1
+Removed Pin From Net: NetName=D-GND Pin=C71-2
+Removed Pin From Net: NetName=AD-2 Pin=C72-1
+Removed Pin From Net: NetName=D-GND Pin=C72-2
+Removed Pin From Net: NetName=AD-1 Pin=C73-1
+Removed Pin From Net: NetName=D-GND Pin=C73-2
+Removed Pin From Net: NetName=AD-2 Pin=C74-1
+Removed Pin From Net: NetName=D-GND Pin=C74-2
+Removed Pin From Net: NetName=D-GND Pin=OP-U2-4
+Removed Pin From Net: NetName=C-3V3 Pin=OP-U2-8
+Removed Pin From Net: NetName=AD-1 Pin=R71-1
+Removed Pin From Net: NetName=AD-2 Pin=R72-1
+Removed Pin From Net: NetName=D-GND Pin=R75-2
+Removed Pin From Net: NetName=D-GND Pin=R76-1
+Removed Member From Class: ClassName=32原理图 Member=AR1
+Removed Member From Class: ClassName=32原理图 Member=AR2
+Removed Member From Class: ClassName=32原理图 Member=C71
+Removed Member From Class: ClassName=32原理图 Member=C72
+Removed Member From Class: ClassName=32原理图 Member=C73
+Removed Member From Class: ClassName=32原理图 Member=C74
+Removed Member From Class: ClassName=32原理图 Member=OP-U2
+Removed Member From Class: ClassName=32原理图 Member=R71
+Removed Member From Class: ClassName=32原理图 Member=R72
+Removed Member From Class: ClassName=32原理图 Member=R73
+Removed Member From Class: ClassName=32原理图 Member=R74
+Removed Member From Class: ClassName=32原理图 Member=R75
+Removed Member From Class: ClassName=32原理图 Member=R76
+Removed Member From Class: ClassName=32原理图 Member=R77
+Removed Member From Class: ClassName=32原理图 Member=R78
+Change Component Footprint: Designator=P3 Old Footprint=MK1.25_3P卧 New Footprint=MK1.25_4P立
+Change Component Comment : Designator=P3 Old Comment=运放 New Comment=蓝牙
+Added Pin To Net: NetName=C-3V3 Pin=P3-1
+Added Pin To Net: NetName=AD-1 Pin=P3-3
+Added Pin To Net: NetName=AD-2 Pin=P3-4
+Added Room: Name=32原理图

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=OLED-D0 Pin=U10-38
+Removed Pin From Net: NetName=OLED-D1 Pin=U10-39
+Added Pin To Net: NetName=OLED-D1 Pin=U10-38
+Added Pin To Net: NetName=OLED-D0 Pin=U10-39
+Added Room: Name=32‘≠¿ÌÕº

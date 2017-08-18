@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=BEEP Pin=U10-20
+Added Pin To Net: NetName=BEEP Pin=U10-4
+Added Pin To Net: NetName=PB2-NO Pin=U10-20
+Added Net: Name=PB2-NO
+Added Room: Name=32‘≠¿ÌÕº

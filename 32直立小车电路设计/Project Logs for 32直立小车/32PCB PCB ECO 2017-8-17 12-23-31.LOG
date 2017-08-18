@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=UART1-RX Pin=USB1-2
+Removed Pin From Net: NetName=UART1-TX Pin=USB1-3
+Added Pin To Net: NetName=UART1-TX Pin=USB1-2
+Added Pin To Net: NetName=UART1-RX Pin=USB1-3
+Added Room: Name=32‘≠¿ÌÕº
