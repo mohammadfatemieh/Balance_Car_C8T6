@@ -46,32 +46,52 @@
 
 /* Private define ------------------------------------------------------------*/
 
-#define KEY_Right_Pin GPIO_PIN_13
-#define KEY_Right_GPIO_Port GPIOC
-#define Inductor_Pin GPIO_PIN_4
-#define Inductor_GPIO_Port GPIOA
-#define RGB_1_Pin GPIO_PIN_12
-#define RGB_1_GPIO_Port GPIOB
-#define RGB_2_Pin GPIO_PIN_13
-#define RGB_2_GPIO_Port GPIOB
-#define RGB_3_Pin GPIO_PIN_14
-#define RGB_3_GPIO_Port GPIOB
-#define OLED_D0_Pin GPIO_PIN_15
-#define OLED_D0_GPIO_Port GPIOA
-#define OLED_D1_Pin GPIO_PIN_3
-#define OLED_D1_GPIO_Port GPIOB
-#define OLED_RST_Pin GPIO_PIN_4
-#define OLED_RST_GPIO_Port GPIOB
-#define OLED_DC_Pin GPIO_PIN_5
+#define KEY_Left_Pin GPIO_PIN_13
+#define KEY_Left_GPIO_Port GPIOC
+#define LED_Pin GPIO_PIN_14
+#define LED_GPIO_Port GPIOC
+#define Beep_Pin GPIO_PIN_15
+#define Beep_GPIO_Port GPIOC
+#define Moter_2_B_Pin GPIO_PIN_0
+#define Moter_2_B_GPIO_Port GPIOA
+#define Moter_2_A_Pin GPIO_PIN_1
+#define Moter_2_A_GPIO_Port GPIOA
+#define Moter_1_B_Pin GPIO_PIN_2
+#define Moter_1_B_GPIO_Port GPIOA
+#define Moter_1_A_Pin GPIO_PIN_3
+#define Moter_1_A_GPIO_Port GPIOA
+#define AD_2_Pin GPIO_PIN_4
+#define AD_2_GPIO_Port GPIOA
+#define AD_1_Pin GPIO_PIN_5
+#define AD_1_GPIO_Port GPIOA
+#define Encoder_2_Pin GPIO_PIN_6
+#define Encoder_2_GPIO_Port GPIOA
+#define Encoder_1_Pin GPIO_PIN_7
+#define Encoder_1_GPIO_Port GPIOA
+#define MPU6050_SDA_Pin GPIO_PIN_0
+#define MPU6050_SDA_GPIO_Port GPIOB
+#define MPU6050_SCL_Pin GPIO_PIN_1
+#define MPU6050_SCL_GPIO_Port GPIOB
+#define Bluetooth_TX_Pin GPIO_PIN_10
+#define Bluetooth_TX_GPIO_Port GPIOB
+#define Bluetooth_RX_Pin GPIO_PIN_11
+#define Bluetooth_RX_GPIO_Port GPIOB
+#define KEY_Up_Pin GPIO_PIN_12
+#define KEY_Up_GPIO_Port GPIOA
+#define OLED_D1_Pin GPIO_PIN_15
+#define OLED_D1_GPIO_Port GPIOA
+#define OLED_D0_Pin GPIO_PIN_3
+#define OLED_D0_GPIO_Port GPIOB
+#define OLED_DC_Pin GPIO_PIN_4
 #define OLED_DC_GPIO_Port GPIOB
-#define KEY_Up_Pin GPIO_PIN_6
-#define KEY_Up_GPIO_Port GPIOB
+#define OLED_RST_Pin GPIO_PIN_5
+#define OLED_RST_GPIO_Port GPIOB
+#define KEY_Right_Pin GPIO_PIN_6
+#define KEY_Right_GPIO_Port GPIOB
 #define KEY_Down_Pin GPIO_PIN_7
 #define KEY_Down_GPIO_Port GPIOB
-#define KEY_Mid_Pin GPIO_PIN_8
+#define KEY_Mid_Pin GPIO_PIN_9
 #define KEY_Mid_GPIO_Port GPIOB
-#define KEY_Left_Pin GPIO_PIN_9
-#define KEY_Left_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

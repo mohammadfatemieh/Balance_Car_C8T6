@@ -94,10 +94,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM2_Init();
-  MX_TIM3_Init();
   MX_USART1_UART_Init();
   MX_USART3_UART_Init();
   MX_ADC1_Init();
+  MX_TIM3_Init();
 
   /* USER CODE BEGIN 2 */
   /* USER CODE BEGIN 1 */
@@ -117,6 +117,16 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
+		
+//		Get_Key();
+//		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIOC, Beep_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOC, LED_Pin, GPIO_PIN_RESET);
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+//		HAL_Delay(500);
+//		HAL_GPIO_WritePin(GPIOC, Beep_Pin, GPIO_PIN_SET);
+//		HAL_GPIO_WritePin(GPIOC, LED_Pin, GPIO_PIN_SET);
+//		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
 //		switch (GO)
 //		{
 //		case  0:	GO = Main_UI_Con();		break;//Ö÷²Ëµ¥
@@ -138,19 +148,20 @@ int main(void)
 //	{ 
 //		uhADCxConvertedValue = HAL_ADC_GetValue£¨£¦AdcHandle£©; 
 //	}
+//		Get_Key();
+//		
+//		ADC_Enable(&hadc1);
 
-		ADC_Enable(&hadc1);
+//		HAL_ADC_Start(&hadc1);
+//		HAL_ADC_PollForConversion(&hadc1, 10);
+//		int i;
+//		uint8_t ch[20];
 
-		HAL_ADC_Start(&hadc1);
-		HAL_ADC_PollForConversion(&hadc1, 10);
-		int i;
-		uint8_t ch[20];
+//			i = HAL_ADC_GetValue(&hadc1);
 
-			i = HAL_ADC_GetValue(&hadc1);
-
-		sprintf(ch, "ADC:%d", i);
-		OLED_ShowString_Normal(0, 26, ch, 12);
-		OLED_Refresh_Gram();
+//		sprintf(ch, "ADC:%d", i);
+//		OLED_ShowString_Normal(0, 26, ch, 12);
+//		OLED_Refresh_Gram();
   }
   /* USER CODE END 3 */
 
@@ -173,7 +184,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL6;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);

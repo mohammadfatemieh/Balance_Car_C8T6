@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=NetC2_1 Pin=C15-1
+Removed Pin From Net: NetName=NetC2_2 Pin=C15-2
+Removed Pin From Net: NetName=A-3V3 Pin=R19-1
+Removed Pin From Net: NetName=NetR9_2 Pin=R19-2
+Added Component: Designator=C2(CAPC1608[0603])
+Added Component: Designator=R9(RESC1608[0603])
+Added Component: Designator=R551(RESC1608[0603])
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=A-3V3 Pin=R9-1
+Added Pin To Net: NetName=NetR9_2 Pin=R9-2
+Added Pin To Net: NetName=D-GND Pin=R551-1
+Added Pin To Net: NetName=BOOT1 Pin=R551-2
+Added Pin To Net: NetName=BOOT1 Pin=U10-20
+Added Net: Name=BOOT1
+Added Member To Class: ClassName=32直立车-原理图 Member=Component C2 470nF
+Added Member To Class: ClassName=32直立车-原理图 Member=Component R7 20K
+Added Member To Class: ClassName=32直立车-原理图 Member=Component R9 10K
+Added Member To Class: ClassName=32直立车-原理图 Member=Component R551 10K
+Added Room: Name=32直立车-原理图

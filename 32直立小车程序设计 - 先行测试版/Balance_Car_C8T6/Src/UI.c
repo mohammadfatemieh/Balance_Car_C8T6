@@ -74,7 +74,7 @@ uint8_t Main_UI_Con(void)
 		{
 			case 1:	//菜单1
 					{
-						OLED_ShowString_Normal(0, 13, "       >  1111       ", 12);
+						OLED_ShowString_Normal(0, 13, "       >  Go       ", 12);
 						OLED_ShowChar(38,13,'>',12,1);
 						break;
 					}
@@ -103,15 +103,15 @@ uint8_t Main_UI_Con(void)
 	}
 }
 /*----------------------------------------------------------------------------------*/
-/*--------------------------------------菜单1---------------------------------------*/
+/*--------------------------------------菜单1  1111---------------------------------*/
 /*----------------------------------------------------------------------------------*/
 uint8_t Fun1_UI_Con(void)
 {
 	uint8_t UI_Case = 1;
 	
-	OLED_ShowString_Toggle(0,  0, "         1111        ", 12);
-	OLED_ShowString_Normal(0, 13, "         1111        ", 12);
-	OLED_ShowString_Normal(0, 26, "         2222        ", 12);
+	OLED_ShowString_Toggle(0,  0, " <        GO         ", 12);
+	OLED_ShowString_Normal(0, 13, "         GoGoGo      ", 12);
+	OLED_ShowString_Normal(0, 26, "         Read Ind    ", 12);
 	OLED_ShowString_Normal(0, 39, "         3333        ", 12);
 	OLED_ShowString_Normal(0, 52, "         4444        ", 12);
 	
@@ -164,23 +164,23 @@ uint8_t Fun1_UI_Con(void)
 		}
 		if(Case_Temp != UI_Case)
 		{
-			OLED_ShowString_Toggle(0,  0, "         1111        ", 12);
-			OLED_ShowString_Normal(0, 13, "         1111        ", 12);
-			OLED_ShowString_Normal(0, 26, "         2222        ", 12);
-			OLED_ShowString_Normal(0, 39, "         3333      ", 12);
+			OLED_ShowString_Toggle(0,  0, " <        GO         ", 12);
+			OLED_ShowString_Normal(0, 13, "         GoGoGo      ", 12);
+			OLED_ShowString_Normal(0, 26, "         Read Ind    ", 12);
+			OLED_ShowString_Normal(0, 39, "         3333        ", 12);
 			OLED_ShowString_Normal(0, 52, "         4444        ", 12);
 		}
 		switch (UI_Case)
 		{
 			case 1:	//菜单1
 					{
-						OLED_ShowString_Normal(0, 13, "       >  1111       ", 12);
+						OLED_ShowString_Normal(0, 13, "       >  GoGoGo       ", 12);
 						OLED_ShowChar(38,13,'>',12,1);
 						break;
 					}
 			case 2: //菜单2
 					{
-						OLED_ShowString_Normal(0, 26, "       >  2222       ", 12);
+						OLED_ShowString_Normal(0, 26, "       >  Read Ind       ", 12);
 						OLED_ShowChar(38,26,'>',12,1);
 						break;
 					}
@@ -203,13 +203,13 @@ uint8_t Fun1_UI_Con(void)
 	}
 }
 /*----------------------------------------------------------------------------------*/
-/*--------------------------------------菜单2---------------------------------------*/
+/*--------------------------------------菜单2  PLAN---------------------------------*/
 /*----------------------------------------------------------------------------------*/
 uint8_t Fun2_UI_Con(void)
 {
 	uint8_t UI_Case = 1;
 	
-	OLED_ShowString_Toggle(0,  0, "         Plan        ", 12);
+	OLED_ShowString_Toggle(0,  0, " <       Plan        ", 12);
 	OLED_ShowString_Normal(0, 13, "         1111        ", 12);
 	OLED_ShowString_Normal(0, 26, "         2222        ", 12);
 	OLED_ShowString_Normal(0, 39, "         3333        ", 12);
@@ -264,7 +264,7 @@ uint8_t Fun2_UI_Con(void)
 		}
 		if(Case_Temp != UI_Case)
 		{
-			OLED_ShowString_Toggle(0,  0, "         Plan        ", 12);
+			OLED_ShowString_Toggle(0,  0, " <       Plan        ", 12);
 			OLED_ShowString_Normal(0, 13, "         1111        ", 12);
 			OLED_ShowString_Normal(0, 26, "         2222        ", 12);
 			OLED_ShowString_Normal(0, 39, "         3333        ", 12);
@@ -303,17 +303,17 @@ uint8_t Fun2_UI_Con(void)
 	}
 }
 /*----------------------------------------------------------------------------------*/
-/*--------------------------------------菜单3---------------------------------------*/
+/*--------------------------------------菜单3  DEVICE-------------------------------*/
 /*----------------------------------------------------------------------------------*/
 uint8_t Fun3_UI_Con(void)
 {
 	uint8_t UI_Case = 1;
 	
-	OLED_ShowString_Toggle(0,  0, "        Device       ", 12);
+	OLED_ShowString_Toggle(0,  0, " <      Device       ", 12);
 	OLED_ShowString_Normal(0, 13, "         1111        ", 12);
-	OLED_ShowString_Normal(0, 26, "         2222        ", 12);
-	OLED_ShowString_Normal(0, 39, "         3333        ", 12);
-	OLED_ShowString_Normal(0, 52, "         4444        ", 12);
+	OLED_ShowString_Normal(0, 26, "         DJ-C        ", 12);
+	OLED_ShowString_Normal(0, 39, "         BMQ         ", 12);
+	OLED_ShowString_Normal(0, 52, "         MT-C        ", 12);
 	
 	while (1)
 	{
@@ -364,11 +364,11 @@ uint8_t Fun3_UI_Con(void)
 		}
 		if(Case_Temp != UI_Case)
 		{
-			OLED_ShowString_Toggle(0,  0, "        Device       ", 12);
+			OLED_ShowString_Toggle(0,  0, " <      Device       ", 12);
 			OLED_ShowString_Normal(0, 13, "         1111        ", 12);
-			OLED_ShowString_Normal(0, 26, "         2222        ", 12);
-			OLED_ShowString_Normal(0, 39, "         3333        ", 12);
-			OLED_ShowString_Normal(0, 52, "         4444        ", 12);
+			OLED_ShowString_Normal(0, 26, "         DJ-C        ", 12);
+			OLED_ShowString_Normal(0, 39, "         BMQ         ", 12);
+			OLED_ShowString_Normal(0, 52, "         MT-C        ", 12);
 		}
 		switch (UI_Case)
 		{
@@ -380,19 +380,19 @@ uint8_t Fun3_UI_Con(void)
 					}
 			case 2: //菜单2
 					{
-						OLED_ShowString_Normal(0, 26, "       >  2222       ", 12);
+						OLED_ShowString_Normal(0, 26, "         DJ-C        ", 12);
 						OLED_ShowChar(38,26,'>',12,1);
 						break;
 					}
 			case 3: //菜单3
 					{
-						OLED_ShowString_Normal(0, 39, "       >  3333       ", 12);
+						OLED_ShowString_Normal(0, 39, "         BMQ         ", 12);
 						OLED_ShowChar(38,39,'>',12,1);
 						break;
 					}
 			case 4: //菜单4
 					{
-						OLED_ShowString_Normal(0, 52, "       >  4444       ", 12);
+						OLED_ShowString_Normal(0, 52, "         MT-C        ", 12);
 						OLED_ShowChar(38,52,'>',12,1);
 						break;
 					}
@@ -403,13 +403,13 @@ uint8_t Fun3_UI_Con(void)
 	}
 }
 /*----------------------------------------------------------------------------------*/
-/*--------------------------------------菜单4---------------------------------------*/
+/*--------------------------------------菜单4  4444---------------------------------*/
 /*----------------------------------------------------------------------------------*/
 uint8_t Fun4_UI_Con(void)
 {
 	uint8_t UI_Case = 1;
 	
-	OLED_ShowString_Toggle(0,  0, "         4444        ", 12);
+	OLED_ShowString_Toggle(0,  0, " <       4444        ", 12);
 	OLED_ShowString_Normal(0, 13, "         1111        ", 12);
 	OLED_ShowString_Normal(0, 26, "         2222        ", 12);
 	OLED_ShowString_Normal(0, 39, "         3333        ", 12);
@@ -464,7 +464,7 @@ uint8_t Fun4_UI_Con(void)
 		}
 		if(Case_Temp != UI_Case)
 		{
-			OLED_ShowString_Toggle(0,  0, "         4444        ", 12);
+			OLED_ShowString_Toggle(0,  0, " <       4444        ", 12);
 			OLED_ShowString_Normal(0, 13, "         1111        ", 12);
 			OLED_ShowString_Normal(0, 26, "         2222        ", 12);
 			OLED_ShowString_Normal(0, 39, "         3333      ", 12);

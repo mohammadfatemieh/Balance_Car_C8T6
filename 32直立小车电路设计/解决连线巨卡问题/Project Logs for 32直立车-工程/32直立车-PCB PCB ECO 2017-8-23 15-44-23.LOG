@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=A-GND Pin=LED1-2
+Removed Pin From Net: NetName=A-GND Pin=LED2-2
+Removed Pin From Net: NetName=A-GND Pin=LED3-2
+Removed Pin From Net: NetName=LED Pin=LED4-2
+Change Component Footprint: Designator=LED1 Old Footprint=LED-0603 New Footprint=LEDC1608(0603)
+Change Component Footprint: Designator=LED2 Old Footprint=LED-0603 New Footprint=LEDC1608(0603)
+Change Component Footprint: Designator=LED3 Old Footprint=LED-0603 New Footprint=LEDC1608(0603)
+Change Component Footprint: Designator=LED4 Old Footprint=LED-0603 New Footprint=LEDC1608(0603)
+Added Pin To Net: NetName=A-GND Pin=LED1-C
+Added Pin To Net: NetName=A-GND Pin=LED2-C
+Added Pin To Net: NetName=A-GND Pin=LED3-C
+Added Pin To Net: NetName=LED Pin=LED4-C
+Added Pin To Net: NetName=NetLED1_A Pin=LED1-A
+Added Pin To Net: NetName=NetLED1_A Pin=R41-1
+Added Net: Name=NetLED1_A
+Added Pin To Net: NetName=NetLED2_A Pin=LED2-A
+Added Pin To Net: NetName=NetLED2_A Pin=R42-1
+Added Net: Name=NetLED2_A
+Added Pin To Net: NetName=NetLED3_A Pin=LED3-A
+Added Pin To Net: NetName=NetLED3_A Pin=R43-1
+Added Net: Name=NetLED3_A
+Added Pin To Net: NetName=NetLED4_A Pin=LED4-A
+Added Pin To Net: NetName=NetLED4_A Pin=R44-1
+Added Net: Name=NetLED4_A
+Added Member To Class: ClassName=32直立车-原理图 Member=Component LED4 Red
+Added Room: Name=32直立车-原理图

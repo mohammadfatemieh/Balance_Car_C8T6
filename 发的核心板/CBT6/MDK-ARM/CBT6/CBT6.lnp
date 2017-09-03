@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"cbt6\stm32f1xx_hal_rcc.o"
+"cbt6\stm32f1xx_hal_dma.o"
+"cbt6\stm32f1xx_hal_flash.o"
+"cbt6\stm32f1xx_hal_flash_ex.o"
+"cbt6\stm32f1xx_hal_rcc_ex.o"
+"cbt6\stm32f1xx_hal_gpio_ex.o"
+"cbt6\stm32f1xx_hal_tim_ex.o"
+"cbt6\stm32f1xx_hal.o"
+"cbt6\stm32f1xx_hal_pwr.o"
+"cbt6\stm32f1xx_hal_cortex.o"
+"cbt6\stm32f1xx_hal_tim.o"
+"cbt6\stm32f1xx_hal_gpio.o"
+"cbt6\system_stm32f1xx.o"
+"cbt6\startup_stm32f103xb.o"
+"cbt6\stm32f1xx_it.o"
+"cbt6\main.o"
+"cbt6\stm32f1xx_hal_msp.o"
+"cbt6\gpio.o"
+--library_type=microlib --strict --scatter "CBT6\CBT6.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CBT6.map" -o CBT6\CBT6.axf

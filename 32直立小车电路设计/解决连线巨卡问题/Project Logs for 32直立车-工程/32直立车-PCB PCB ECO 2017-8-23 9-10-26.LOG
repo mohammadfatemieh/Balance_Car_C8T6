@@ -1,0 +1,8 @@
+Added Component: Designator=P4(HDR1X5)
+Added Pin To Net: NetName=NETLABEL2 Pin=P4-1
+Added Pin To Net: NetName=NETLABEL2 Pin=P4-2
+Added Pin To Net: NetName=NETLABEL2 Pin=P4-3
+Added Pin To Net: NetName=NETLABEL2 Pin=P4-4
+Added Pin To Net: NetName=NETLABEL2 Pin=P4-5
+Added Net: Name=NETLABEL2
+Added Member To Class: ClassName=32直立车-原理图 Member=Component P4 Header 5

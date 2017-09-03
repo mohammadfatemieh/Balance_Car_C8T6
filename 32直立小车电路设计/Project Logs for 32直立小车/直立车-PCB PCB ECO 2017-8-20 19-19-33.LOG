@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=S1 Old Footprint=3脚3A开关-立 New Footprint=2(-1)脚3A开关-立
+Added Member To Class: ClassName=32原理图 Member=Component B1 Motor Servo
+Added Member To Class: ClassName=32原理图 Member=Component B2 Motor Servo
+Added Member To Class: ClassName=32原理图 Member=Component Q3 NMOS-2
+Added Member To Class: ClassName=32原理图 Member=Component Q5 NMOS-2
+Added Member To Class: ClassName=32原理图 Member=Component Q7 NMOS-2
+Added Room: Name=32原理图

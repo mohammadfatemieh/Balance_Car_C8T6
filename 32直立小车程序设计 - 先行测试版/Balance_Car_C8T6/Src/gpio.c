@@ -69,40 +69,49 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2|OLED_D1_Pin|OLED_RST_Pin|OLED_DC_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, LED_Pin|Beep_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, RGB_1_Pin|RGB_2_Pin|RGB_3_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, MPU6050_SDA_Pin|MPU6050_SCL_Pin|OLED_D0_Pin|OLED_DC_Pin 
+                          |OLED_RST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(OLED_D0_GPIO_Port, OLED_D0_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8|OLED_D1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = KEY_Right_Pin;
+  GPIO_InitStruct.Pin = KEY_Left_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(KEY_Right_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(KEY_Left_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB2 PBPin PBPin PBPin */
-  GPIO_InitStruct.Pin = GPIO_PIN_2|OLED_D1_Pin|OLED_RST_Pin|OLED_DC_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PBPin PBPin PBPin */
-  GPIO_InitStruct.Pin = RGB_1_Pin|RGB_2_Pin|RGB_3_Pin;
+  /*Configure GPIO pins : PCPin PCPin */
+  GPIO_InitStruct.Pin = LED_Pin|Beep_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = OLED_D0_Pin;
+  /*Configure GPIO pins : PBPin PBPin PBPin PBPin 
+                           PBPin */
+  GPIO_InitStruct.Pin = MPU6050_SDA_Pin|MPU6050_SCL_Pin|OLED_D0_Pin|OLED_DC_Pin 
+                          |OLED_RST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(OLED_D0_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin PBPin */
-  GPIO_InitStruct.Pin = KEY_Up_Pin|KEY_Down_Pin|KEY_Mid_Pin|KEY_Left_Pin;
+  /*Configure GPIO pins : PA8 PAPin */
+  GPIO_InitStruct.Pin = GPIO_PIN_8|OLED_D1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PtPin */
+  GPIO_InitStruct.Pin = KEY_Up_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(KEY_Up_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PBPin PBPin PBPin */
+  GPIO_InitStruct.Pin = KEY_Right_Pin|KEY_Down_Pin|KEY_Mid_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -129,9 +138,9 @@ void Get_Key(void)
 		HAL_Delay(70);
 		if(0 == HAL_GPIO_ReadPin(KEY_Up_GPIO_Port, KEY_Up_Pin))
 		{
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 			HAL_Delay(5);
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 			Key_Press = Press_Up;
 		}
 
@@ -143,9 +152,9 @@ void Get_Key(void)
 		HAL_Delay(70);
 		if(0 == HAL_GPIO_ReadPin(KEY_Down_GPIO_Port, KEY_Down_Pin))
 		{
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 			HAL_Delay(5);
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 			Key_Press = Press_Down;
 		}
 		return;
@@ -156,9 +165,9 @@ void Get_Key(void)
 		HAL_Delay(70);
 		if(0 == HAL_GPIO_ReadPin(KEY_Mid_GPIO_Port, KEY_Mid_Pin))
 		{
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 			HAL_Delay(5);
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 			Key_Press = Press_Mid;
 		}
 		return;
@@ -169,9 +178,9 @@ void Get_Key(void)
 		HAL_Delay(70);
 		if(0 == HAL_GPIO_ReadPin(KEY_Left_GPIO_Port, KEY_Left_Pin))
 		{
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 			HAL_Delay(5);
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 			Key_Press = Press_Left;
 		}
 		return;
@@ -182,9 +191,9 @@ void Get_Key(void)
 		HAL_Delay(70);
 		if(0 == HAL_GPIO_ReadPin(KEY_Right_GPIO_Port, KEY_Right_Pin))
 		{
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
 			HAL_Delay(5);
-			HAL_GPIO_WritePin(RGB_1_GPIO_Port, RGB_1_Pin, GPIO_PIN_SET);
+			HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 			Key_Press = Press_Right;
 		}
 		return;

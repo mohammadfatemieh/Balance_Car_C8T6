@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=D-GND Pin=R52-1
+Removed Member From Class: ClassName=32原理图 Member=R52
+Added Pin To Net: NetName=D-GND Pin=U5-5
+Added Member To Class: ClassName=32原理图 Member=Component C3 104
+Added Member To Class: ClassName=32原理图 Member=Component C4 105/12V
+Added Member To Class: ClassName=32原理图 Member=Component C32 104
+Added Member To Class: ClassName=32原理图 Member=Component C33 104
+Added Member To Class: ClassName=32原理图 Member=Component C34 104
+Added Member To Class: ClassName=32原理图 Member=Component C35 102
+Added Member To Class: ClassName=32原理图 Member=Component C38 330nf
+Added Member To Class: ClassName=32原理图 Member=Component R1 4R7
+Added Member To Class: ClassName=32原理图 Member=Component R2 10K
+Added Member To Class: ClassName=32原理图 Member=Component R9 10K
+Added Member To Class: ClassName=32原理图 Member=Component R30 20
+Added Member To Class: ClassName=32原理图 Member=Component R31 20K
+Added Member To Class: ClassName=32原理图 Member=Component R32 40.2K
+Added Member To Class: ClassName=32原理图 Member=Component R33 75K
+Added Member To Class: ClassName=32原理图 Member=Component R34 7.5K
+Added Member To Class: ClassName=32原理图 Member=Component R35 100K
+Added Member To Class: ClassName=32原理图 Member=Component R36 0
+Added Member To Class: ClassName=32原理图 Member=Component R37 10k
+Added Member To Class: ClassName=32原理图 Member=Component U30 MP2315

@@ -1,0 +1,55 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~32直立车-工程.PrjPcb|ReportField=ProjectFullPath~F:\System\Documents\GitHub\Balance_Car_C8T6\32直立小车电路设计\解决连线巨卡问题\32直立车-工程.PrjPcb|ReportField=Title~Bill of Materials For Project [32直立车-工程.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~120|ReportField=ReportTime~12:24:37|ReportField=ReportDate~2017/8/25|ReportField=ReportDateTime~2017/8/25 12:24:37|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2017/8/25|ReportField=CurrentTime~12:16:35|ReportField=Date~|ReportField=DocumentFullPathAndName~F:\System\Documents\GitHub\Balance_Car_C8T6\32直立小车电路设计\解决连线巨卡问题\32直立车-原理图.SchDoc|ReportField=DocumentName~32直立车-原理图.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2017/8/24|ReportField=Organization~|ReportField=ProjectName~32直立车-工程.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~32直立车-工程.PrjPcb|ReportField=DataSourceFullPath~F:\System\Documents\GitHub\Balance_Car_C8T6\32直立小车电路设计\解决连线巨卡问题\32直立车-工程.PrjPcb
+1|Power12||12V-IN|VBAT-2|Power12|1
+2|Motor Servo|Servo Motor|B1, B2|电机接口 - duplicate|Motor Servo|2
+3|107/12V|Chip Capacitor, Silkscreen Border|C1, C8|CAPC4532[1812]|Cap Chip 2|2
+4|470nF|Chip Capacitor, Silkscreen Border|C2, C9|CAPC1608[0603]|Cap Chip 2|2
+5|104|Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, PSpice Model, Chip Capacitor, PSpice Model, Chip Capacitor, PSpice Model, Chip Capacitor, PSpice Model, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, Chip Capacitor, Silkscreen Border, [NoValue]|C3, C6, C10, C13, C32, C33, C34, C40, C41, C42, C50, C51, C52, C53, C54, C55, C64|CAPC1608[0603]|Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 1, Cap Chip 1, Cap Chip 1, Cap Chip 1, Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 2, Cap Chip 2, ECAP|17
+6|105/12V|Chip Capacitor, Silkscreen Border|C4, C7, C11, C14|CAPC1608[0603]|Cap Chip 2|4
+7|106/12V|Chip Capacitor, Silkscreen Border|C5, C12|CAPC2012[0805]|Cap Chip 2|2
+8|220uF/12V|Chip Capacitor, PSpice Model|C30|CAPT7343|Cap Chip 1|1
+9|22uF/12V|Chip Capacitor, PSpice Model|C31|CAPC2012[0805]|Cap Chip 1|1
+10|102|Chip Capacitor, PSpice Model|C35|CAPC1608[0603]|Cap Chip 1|1
+11|22uF|Chip Capacitor, PSpice Model|C36, C37|CAPC2012[0805]|Cap Chip 1|2
+12|330nf|Chip Capacitor, PSpice Model|C38|CAPC1608[0603]|Cap Chip 1|1
+13|Cap Pol2|Polarized Capacitor (Axial)|C39|CAPT7343|Cap Pol2|1
+14|106/3V3|Chip Capacitor, Silkscreen Border|C43|CAPC1608[0603]|Cap Chip 2|1
+15|22pF|Chip Capacitor, Silkscreen Border|C56, C57|CAPC1608[0603]|Cap Chip 2|2
+16|105||C60, C61, C65|CAPC1608[0603]|ECAP|3
+17|4.7uf||C62|CAPC2012[0805]|ECAP|1
+18|2.2uf||C63|CAPC1608[0603]|ECAP|1
+19|106/3V3||C66|CAPC2012[0805]|ECAP|1
+20|Cap Pol2|Polarized Capacitor (Axial)|C102|钽电容3216|Cap Pol2|1
+21|1N5819|Default Diode|D1, D2|SMA[DO-214AC]|Diode|2
+22|Red|Typical Chip LED|D100, D101|LED-0603|LED Chip|2
+23|500mA|Fuse|F4|CAPC2012[0805]|Fuse chip|1
+24|4.7uH|Power Inductor, Ferrite-Core|L30|CD52|Ind Power|1
+25|Red|Typical Chip LED|LED1, LED2, LED3, LED4|LEDC1608(0603)|LED Chip|4
+26||Header, 4-Pin|P1, P3|MK1.25_4P立|Header 4|2
+27|陀螺仪、编码器|Header, 6-Pin|P2|6P-卧头|Header 6|1
+28|Header 5|Header, 5-Pin|P4|扩展口-5P|Header 5|1
+29|NMOS-2|N-Channel Power MOSFET|Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8|IR7843-mg|NMOS-2|8
+30|NPN|NPN Transistor|Q50|SOT23|NPN|1
+31|4R7|Chip Resistor, Border Silkscreen On PCB Library|R1, R4, R5, R6, R10, R13, R14, R15|RESC1608[0603]|Res Chip 2p 2|8
+32|10K|resistor, resistor, Chip Resistor, Border Silkscreen On PCB Library, resistor, resistor, Chip Resistor, Border Silkscreen On PCB Library, Chip Resistor, PSpice Model, IPC PCB Library Drawing, Chip Resistor, PSpice Model, IPC PCB Library Drawing, Chip Resistor, PSpice Model, IPC PCB Library Drawing, Chip Resistor, PSpice Model, IPC PCB Library Drawing, Chip Resistor, PSpice Model, IPC PCB Library Drawing|R2, R3, R9, R11, R12, R18, R37, R41, R50, R51, R551|RESC1608[0603]|R-10K, R-10K, Res Chip 2p 2, R-10K, R-10K, Res Chip 2p 2, Res Chip 2p 1, Res Chip 2p 1, Res Chip 2p 1, Res Chip 2p 1, Res Chip 2p 1|11
+33|20K|Chip Resistor, Border Silkscreen On PCB Library, Chip Resistor, Border Silkscreen On PCB Library, Chip Resistor, PSpice Model, IPC PCB Library Drawing|R7, R16, R31|RESC1608[0603]|Res Chip 2p 2, Res Chip 2p 2, Res Chip 2p 1|3
+34|22K|Chip Resistor, Border Silkscreen On PCB Library|R8, R17|RESC1608[0603]|Res Chip 2p 2|2
+35|20|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R30|RESC1608[0603]|Res Chip 2p 1|1
+36|40.2K|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R32|RESC1608[0603]|Res Chip 2p 1|1
+37|75K|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R33|RESC1608[0603]|Res Chip 2p 1|1
+38|7.5K|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R34|RESC1608[0603]|Res Chip 2p 1|1
+39|100K|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R35|RESC1608[0603]|Res Chip 2p 1|1
+40|0|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R36, R38|RESC1608[0603]|Res Chip 2p 1|2
+41|4.7K|Chip Resistor, PSpice Model, IPC PCB Library Drawing|R42, R43, R44|RESC1608[0603]|Res Chip 2p 1|3
+42|1K||R53|RESC1608[0603]|RES|1
+43|910k|CR85-102J|R60|RESC1608[0603]|1K|1
+44|switch||S1|2(-1)脚3A开关-立|switch|1
+45|SW-PB|Switch|S50|key3*4*2|SW-PB|1
+46|有源蜂鸣器||SPEAKER1|小Beep|有源蜂鸣器|1
+47|A4957|A4957SESTR-T|U1, U2|QFN-24|A4957|2
+48|五向按键||U5|5向key-小|五向按键|1
+49|TPS7333||U6, U100|SOIC8|TPS73xx|2
+50|oled||U9|oled|OLED_1306|1
+51|STM32F101CBT6|STM32 ARM-based 32-bit MCU with 128 Kbytes Flash, 48-pin LQFP, Industrial Temperature|U10|LQFP48_N|STM32F101CBT6|1
+52|MP2315||U30|MP2315用SOP8|MP2315|1
+53|USB-5P|USB CONNECTOR|USB1, USB2|Micro USB 牛角|USB-5P|2
+54|Frequency|Crystal Oscillator|Y5|4脚晶振-5032|XTAL|1

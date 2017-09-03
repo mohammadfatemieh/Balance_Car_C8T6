@@ -8,6 +8,9 @@
 
 
 uint8_t Main_UI_Con(void);
+uint8_t Fun1_UI_Con(void);
+uint8_t Fun2_UI_Con(void);
+uint8_t Fun3_UI_Con(void);
 
 #endif
 

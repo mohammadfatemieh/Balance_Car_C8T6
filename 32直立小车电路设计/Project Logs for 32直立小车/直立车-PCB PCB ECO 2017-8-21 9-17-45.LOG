@@ -1,0 +1,9 @@
+Added Component: Designator=LED1(LED-0603)
+Added Component: Designator=LED2(LED-0603)
+Added Component: Designator=LED3(LED-0603)
+Added Member To Class: ClassName=32原理图 Member=Component C56 22pF
+Added Member To Class: ClassName=32原理图 Member=Component LED1 Red
+Added Member To Class: ClassName=32原理图 Member=Component LED2 Red
+Added Member To Class: ClassName=32原理图 Member=Component LED3 Red
+Added Member To Class: ClassName=32原理图 Member=Component SPEAKER1 有源蜂鸣器
+Added Room: Name=32原理图
